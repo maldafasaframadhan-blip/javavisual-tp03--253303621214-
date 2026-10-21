@@ -82,3 +82,46 @@ tertinggi dan mengembalikan null jika daftar kosong.
 Nama dokumen: JavaVisual_TP05_[253303621214]_[M Aldafa Saf Ramadhan]
 
 Link Google Docs: (https://1drv.ms/w/c/2131cfafda44bcb4/IQDHBrfI-spPSY6YtXNRp8I1AaWbpzGSu2QF6nO4sIruqUA?e=ElzH4b)
+
+
+# TP8 — Character Manager Sprint #3
+
+## A. Implementasi GUI
+
+Pada TP8, aplikasi Character Manager dikembangkan dari program berbasis console menjadi aplikasi GUI menggunakan Java Swing. Kelas `MainWindow` berada pada package `com.unpri.charactermanager.view` dan menggunakan `JFrame` sebagai jendela utama. Daftar karakter ditampilkan secara dinamis menggunakan perulangan berdasarkan data dari `CharacterManager`.
+
+Pembuatan jendela dijalankan melalui `SwingUtilities.invokeLater()` agar GUI dibuat pada Event Dispatch Thread.
+
+## B. Data Karakter dan Statistik
+
+Lima karakter awal yang ditampilkan adalah:
+
+- Arjuna — WARRIOR, level 5.
+- Srikandi — ARCHER, level 3.
+- Bima — WARRIOR, level 7.
+- Gatotkaca — WARRIOR, level 6.
+- Cempaka — MAGE, level 4.
+
+Gatotkaca ditambahkan sebagai karakter WARRIOR untuk menambah variasi karakter petarung. Cempaka dipilih sebagai MAGE untuk menambah variasi tipe karakter.
+
+Rata-rata level dihitung melalui method `getAverageLevel()` pada `CharacterManager`. Tombol Tambah Karakter menambahkan Maharani dengan tipe MAGE dan level 4.
+
+## C. Screenshot
+
+### Sebelum perubahan data
+
+![Screenshot sebelum perubahan](tp8-sebelum.png)
+
+### Sesudah perubahan data
+
+![Screenshot sesudah perubahan](tp8-sesudah.png)
+
+## D. Aliran Data dan MVC
+
+Kelas `Main` membuat objek karakter dan memasukkannya ke dalam `CharacterManager`. Selanjutnya, objek `CharacterManager` diberikan kepada `MainWindow` melalui constructor. `MainWindow` mengambil daftar karakter dari manager dan menampilkannya menggunakan `JLabel` yang dibuat melalui perulangan. Statistik rata-rata level dihitung oleh `CharacterManager`, kemudian hasilnya ditampilkan pada jendela. Struktur ini menerapkan pemisahan antara pengelolaan data dan tampilan yang sejalan dengan prinsip MVC, meskipun kelas Controller terpisah belum dibuat.
+
+## E. Analisis TP8
+
+Dokumen analisis GUI, event-driven programming, pewarisan, dan MVC tersedia pada tautan Google Docs berikut:
+
+**Google Docs:** (https://1drv.ms/w/c/2131cfafda44bcb4/IQBopSU3QWhFQb586hXJuF2RAW-DLU_OV9G2V8YZNdR2uCY?e=n9WX34)
