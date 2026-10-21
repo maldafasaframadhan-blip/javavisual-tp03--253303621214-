@@ -44,3 +44,41 @@ CharacterManager/
 - Nama lengkap: M Aldafa Saf Ramadhan
 - NIM: 253303621214
 - Link Google Docs Bagian D:(https://1drv.ms/w/c/2131cfafda44bcb4/IQALqiI7G596R6zoCvr8Mt-1AWZWWpwnjIgt0uxH97bJ-Tg?e=Fx9RB4)
+  
+
+# TP5 — Character Manager Sprint #2
+
+## A. Implementasi Core
+
+Pada TP5, project Character Manager dikembangkan
+dengan fitur pengelolaan data karakter (CRUD).
+
+Fitur yang dibuat:
+- equals() untuk membandingkan nama karakter.
+- addCharacter() untuk menambahkan karakter.
+- findByName() untuk mencari karakter.
+- removeCharacter() untuk menghapus karakter.
+- getTotalCharacters() untuk menghitung karakter.
+- getAllCharacters() untuk mengembalikan salinan daftar.
+
+## B. Mini-Challenge
+
+- getAverageLevel() untuk menghitung rata-rata level.
+- findByType() untuk mencari karakter berdasarkan tipe.
+
+## C. Fitur Mandiri
+
+Fitur tambahan: findStrongest().
+
+Method ini mencari karakter dengan nilai attack
+tertinggi dan mengembalikan null jika daftar kosong.
+
+## D. Screenshot Output TP5
+
+![Output TP5](outputtp5.png)
+
+## E. Analisis Google Docs
+
+Nama dokumen: JavaVisual_TP05_[253303621214]_[M Aldafa Saf Ramadhan]
+
+Link Google Docs: (https://1drv.ms/w/c/2131cfafda44bcb4/IQDHBrfI-spPSY6YtXNRp8I1AaWbpzGSu2QF6nO4sIruqUA?e=ElzH4b)
